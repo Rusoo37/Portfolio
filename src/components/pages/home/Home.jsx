@@ -13,8 +13,8 @@ const Home = () => {
                             sx={{
                                 fontSize: {
                                     sx: "2rem",
-                                    md: "4rem",
                                     sm: "3rem",
+                                    md: "4rem",
                                 },
                                 fontFamily: "Oswald",
                             }}
