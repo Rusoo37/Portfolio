@@ -1,0 +1,78 @@
+import { Typography } from "@mui/material";
+import "./AboutMe.css";
+import { Link } from "react-router-dom";
+
+const AboutMe = () => {
+    return (
+        <div
+            style={{
+                width: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+            }}
+        >
+            <h1 style={{ marginTop: "5rem" }}>About Me</h1>
+
+            <div className="container-info-aboutMe">
+                <div className="text-aboutMe">
+                    <Typography>
+                        I'm a System Engineering student, who is 20 years old,
+                        at University of Tandil, Buenos Aires, Argentina.
+                        Although, I'm a productive Front End Developer working
+                        as a freelancer. My skills are JavaScript and ReactJs.
+                        I'm interested on working in short proyects in order to
+                        continue my university studies.
+                    </Typography>
+                    <h3>Extras:</h3>
+                    <div className="extra-aboutMe">
+                        <li>
+                            <a
+                                href="./../../../assets/curriculumNico.pdf"
+                                download
+                                style={{ color: "black", fontSize: "1.1rem" }}
+                            >
+                                <strong>Curriculum Vitae</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <Link
+                                to="/work"
+                                style={{ color: "black", fontSize: "1.1rem" }}
+                            >
+                                <strong>Proyects</strong>
+                            </Link>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/Rusoo37"
+                                style={{ color: "black" }}
+                            >
+                                <strong>GitHub</strong>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div className="separator-intro"></div>
+                <div
+                    style={{
+                        width: "50%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <img
+                        src="https://res.cloudinary.com/dqonbozpq/image/upload/v1691966346/Perfil_kwdhgb.jpg"
+                        alt="Yo"
+                        className="fotoMia-aboutMe"
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default AboutMe;

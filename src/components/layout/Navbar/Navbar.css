@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.container-navbar {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 5px 2px #8e8c88;
+    background-color: #8e8c88;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+.logo-navbar {
+    width: 50%;
+}
+.secciones-navbar {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    padding: 2rem;
+}

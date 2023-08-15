@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+.container-btn-whatsapp {
+    width: 16rem;
+    height: 8rem;
+    position: fixed;
+    right: 0rem;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-whatsapp {
+    width: 100%;
+    height: 100%;
+}

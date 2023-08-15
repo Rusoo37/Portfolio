@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.ty {
+    cursor: pointer;
+}
+.ty:active {
+    text-decoration: underline;
+    transition: text-decoration 5s ease;
+}

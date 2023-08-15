@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+/* COlOR LOGO : #F5E7B8 */
+.container-home {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    min-height: 40rem;
+    position: relative;
+}
+.introduccion-home {
+    width: 90%;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container-nombre-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.typo-home {
+    font-family: "Oswald", sans-serif;
+}
+.proyects-home {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name-home {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.separator-intro-home {
+    margin-top: 10%;
+    height: 80%;
+    width: 2px;
+    background-color: #8e8c88;
+}
+.separator-home {
+    height: 2px;
+    background-color: #8e8c88;
+}
+.ejemplos-home {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    width: 90%;
+}
+.aboutMe-home {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.container-info-aboutMe-home {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: rem;
+}
+.text-aboutMe-home {
+    width: 50%;
+}
+.extra-aboutMe-home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: black;
+}
+.fotoMia-home {
+    width: 40%;
+    margin-top: 9rem;
+    box-shadow: 2px 2px 10px 2px rgb(197, 197, 197);
+}
