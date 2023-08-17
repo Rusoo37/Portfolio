@@ -5,16 +5,24 @@ import "./Secciones.css";
 const Secciones = () => {
     return (
         <>
-            <Link to="./work" style={{ color: "black" }}>
-                <Typography className="ty">Work</Typography>
+            <Link to="./work">
+                <Typography className="ty" color="secondary.main">
+                    Work
+                </Typography>
             </Link>
-            <Link to="./about-me" style={{ color: "black" }}>
-                <Typography className="ty" sx={{ fontFamily: "Rubik" }}>
+            <Link to="./about-me">
+                <Typography
+                    className="ty"
+                    sx={{ fontFamily: "Rubik" }}
+                    color="secondary.main"
+                >
                     About me
                 </Typography>
             </Link>
-            <a href="#contact" style={{ color: "black" }}>
-                <Typography className="ty">Contact</Typography>
+            <a href="#contact">
+                <Typography className="ty" color="secondary.main">
+                    Contact
+                </Typography>
             </a>
         </>
     );

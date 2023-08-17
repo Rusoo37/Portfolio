@@ -1,10 +1,9 @@
 .footer {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 2px 2px #e3e2dc;
-    background-color: #8e8c88;
+    box-shadow: 0 0 8px 1px #d2c4c4;
     color: black;
-    height: 100vh;
 }
 .container-footer {
     width: 100%;
@@ -32,6 +31,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 2px 2px #444444;
+    box-shadow: 0 0 8px 1px #d2c4c4;
     height: 15%;
 }

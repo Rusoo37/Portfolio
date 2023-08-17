@@ -1,9 +1,12 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "./CardProyect.css";
 
 const CardProyect = ({ item }) => {
     return (
-        <div className="info-cardProyect">
+        <Box
+            className="info-cardProyect"
+            sx={{ backgroundColor: "secondary.light", color: "primary.main" }}
+        >
             <div className="primeraParte-cardProyect">
                 <Typography variant="h4">{item.nombre}</Typography>
             </div>
@@ -24,12 +27,14 @@ const CardProyect = ({ item }) => {
                     <div>{item.descripcion}</div>
                     <div>
                         <a href={item.url} target="_blank">
-                            <Typography variant="h5">{item.url}</Typography>
+                            <Typography variant="h5" color="primary.main">
+                                {item.url}
+                            </Typography>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </Box>
     );
 };
 

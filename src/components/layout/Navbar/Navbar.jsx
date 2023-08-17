@@ -1,10 +1,16 @@
 import "./Navbar.css";
 import Secciones from "../../common/secciones/Secciones";
 import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
 
 const Navbar = () => {
     return (
-        <div className="container-navbar">
+        <Box
+            className="container-navbar"
+            sx={{
+                backgroundColor: "primary.dark",
+            }}
+        >
             <div className="logo-navbar">
                 <h2 style={{ width: "5rem" }}>
                     <Link to="/" style={{ color: "white" }}>
@@ -19,7 +25,7 @@ const Navbar = () => {
             <div className="secciones-navbar">
                 <Secciones />
             </div>
-        </div>
+        </Box>
     );
 };
 

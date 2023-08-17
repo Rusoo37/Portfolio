@@ -1,10 +1,10 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
 
 const AboutMe = () => {
     return (
-        <div
+        <Box
             style={{
                 width: "100%",
                 display: "flex",
@@ -12,6 +12,7 @@ const AboutMe = () => {
                 justifyContent: "center",
                 alignItems: "center",
             }}
+            sx={{ backgroundColor: "secondary.dark" }}
         >
             <h1 style={{ marginTop: "5rem" }}>About Me</h1>
 
@@ -54,7 +55,10 @@ const AboutMe = () => {
                         </li>
                     </div>
                 </div>
-                <div className="separator-intro"></div>
+                <Box
+                    className="separator-intro"
+                    sx={{ backgroundColor: "primary.dark" }}
+                ></Box>
                 <div
                     style={{
                         width: "50%",
@@ -71,7 +75,7 @@ const AboutMe = () => {
                     />
                 </div>
             </div>
-        </div>
+        </Box>
     );
 };
 

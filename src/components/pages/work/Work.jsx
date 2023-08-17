@@ -1,4 +1,4 @@
-import { Alert } from "@mui/material";
+import { Alert, Box } from "@mui/material";
 import CardProyect from "../../common/cardProyect/CardProyect";
 import "./Work.css";
 import Skeleton from "@mui/material/Skeleton";
@@ -6,12 +6,15 @@ import Skeleton from "@mui/material/Skeleton";
 const Work = ({ items }) => {
     let arr = [1, 2];
     return (
-        <div className="container-works">
+        <Box
+            className="container-works"
+            sx={{ backgroundColor: "secondary.dark" }}
+        >
             <h1 style={{ marginTop: "2rem" }}>Proyects</h1>
             {items.length > 0
                 ? items.map((item) => <CardProyect key={item.id} item={item} />)
                 : arr.map((element) => (
-                      <div className="info-skeleton-work" key={element}>
+                      <Box className="info-skeleton-work" key={element}>
                           <div className="primeraParte-skeleton-work">
                               <Skeleton
                                   variant="rectangular"
@@ -42,7 +45,7 @@ const Work = ({ items }) => {
                                   </div>
                               </div>
                           </div>
-                      </div>
+                      </Box>
                   ))}
             <div className="container-btn-whatsapp">
                 <Alert color="success">Consultas al WhatsApp!</Alert>
@@ -54,7 +57,7 @@ const Work = ({ items }) => {
                     />
                 </a>
             </div>
-        </div>
+        </Box>
     );
 };
 

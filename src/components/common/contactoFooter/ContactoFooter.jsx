@@ -1,11 +1,24 @@
-import { Button, TextField, TextareaAutosize } from "@mui/material";
+import { Button, TextField, TextareaAutosize, Typography } from "@mui/material";
 import "./ContactoFooter.css";
 
-const ContactoFooter = ({ handleSubmit, handleChange, errors }) => {
+const ContactoFooter = ({
+    handleSubmit,
+    handleChange,
+    errors,
+    nombre,
+    correo,
+    mensaje,
+}) => {
     return (
         <form className="info-footer" onSubmit={handleSubmit}>
             <div className="inputs-footer">
-                <h3>Consultame por Mail!</h3>
+                <Typography
+                    variant="h5"
+                    color="secondary.main"
+                    sx={{ fontSize: "1.1rem" }}
+                >
+                    Consultame por Mail!
+                </Typography>
                 <TextField
                     name="name"
                     placeholder="Nombre.."

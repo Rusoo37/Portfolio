@@ -3,10 +3,8 @@
     height: 5rem;
     display: flex;
     align-items: center;
-    padding: 1rem;
-    box-shadow: 0 0 5px 2px #8e8c88;
-    background-color: #8e8c88;
-    color: white;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px #b99836;
     font-family: "Rubik", sans-serif;
 }
 .logo-navbar {

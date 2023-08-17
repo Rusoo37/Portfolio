@@ -7,8 +7,7 @@
     gap: 1rem;
     min-height: 20rem;
     padding: 10px;
-    box-shadow: 1px 0 4px 1px rgb(209, 208, 207);
-    background-color: white;
+    box-shadow: 0 0 8px 2px rgb(173, 168, 161);
 }
 .primeraParte-cardProyect {
     display: flex;
