@@ -16,13 +16,13 @@ const Redes = () => {
             >
                 <FacebookIcon />
             </a>
-            <Tooltip title="Necochea" style={{ color: "#272726" }}>
+            <Tooltip title="Necochea" sx={{ color: "secondary.main" }}>
                 <LocationOnIcon />
             </Tooltip>
             <a href="https://wa.link/neljfb" style={{ color: "#25D366" }}>
                 <WhatsAppIcon />
             </a>
-            <Tooltip title="2262486975" style={{ color: "#272726" }}>
+            <Tooltip title="2262486975" sx={{ color: "secondary.main" }}>
                 <PhoneIcon />
             </Tooltip>
             <a

@@ -17,7 +17,7 @@ const ContactoFooter = ({
                     color="secondary.main"
                     sx={{ fontSize: "1.1rem" }}
                 >
-                    Consultame por Mail!
+                    Ask me by Mail!
                 </Typography>
                 <TextField
                     name="name"
@@ -63,7 +63,7 @@ const ContactoFooter = ({
                 variant="outlined"
                 style={{ color: "white", borderColor: "white" }}
             >
-                Enviar mensaje
+                Send Email
             </Button>
         </form>
     );

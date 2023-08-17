@@ -17,6 +17,7 @@ I hope you like my portfolio and my work.
 -   Poner el Logo.
 -   Hacer la pagina de about Me.
 -   Traer la info de los inputs y verificarlos
--   Hacer funcionar el form de contacto. --DONE--
+-   Hacer funcionar el form de contacto.
 -   Subirla a Vercel.
+-   Hacer modo Oscuro. --DONE--
 -   Calificación 15-8 es: 8/10.

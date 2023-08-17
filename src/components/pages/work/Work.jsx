@@ -48,7 +48,7 @@ const Work = ({ items }) => {
                       </Box>
                   ))}
             <div className="container-btn-whatsapp">
-                <Alert color="success">Consultas al WhatsApp!</Alert>
+                <Alert color="success">Inquiries by WhatsApp!</Alert>
                 <a href="https://wa.link/neljfb" className="btn-whatsapp">
                     <img
                         src="https://res.cloudinary.com/dqonbozpq/image/upload/v1691860314/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png_arus4e.png"

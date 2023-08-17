@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Alert, Box, Typography } from "@mui/material";
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
 
@@ -74,6 +74,16 @@ const AboutMe = () => {
                         className="fotoMia-aboutMe"
                     />
                 </div>
+            </div>
+            <div className="container-btn-whatsapp">
+                <Alert color="success">Inquiries by WhatsApp!</Alert>
+                <a href="https://wa.link/neljfb" className="btn-whatsapp">
+                    <img
+                        src="https://res.cloudinary.com/dqonbozpq/image/upload/v1691860314/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png_arus4e.png"
+                        alt="WhatsApp"
+                        style={{ height: "100%", width: "100%" }}
+                    />
+                </a>
             </div>
         </Box>
     );
