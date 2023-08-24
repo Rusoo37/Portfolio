@@ -5,11 +5,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Tooltip } from "@mui/material";
+import { Box, Tooltip } from "@mui/material";
 
 const Redes = () => {
     return (
-        <div className="container-redes">
+        <Box
+            className="container-redes"
+            sx={{ flexDirection: { xs: "column", md: "row" } }}
+        >
             <a
                 href="https://www.facebook.com/nicolas.angladette.7"
                 style={{ color: "#385898" }}
@@ -34,7 +37,7 @@ const Redes = () => {
             <a href="https://github.com/Rusoo37" style={{ color: "black" }}>
                 <GitHubIcon />
             </a>
-        </div>
+        </Box>
     );
 };
 

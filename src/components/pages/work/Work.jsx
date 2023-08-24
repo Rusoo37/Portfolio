@@ -14,35 +14,33 @@ const Work = ({ items }) => {
             {items.length > 0
                 ? items.map((item) => <CardProyect key={item.id} item={item} />)
                 : arr.map((element) => (
-                      <Box className="info-skeleton-work" key={element}>
+                      <Box
+                          className="info-skeleton-work"
+                          sx={{ width: "100%", height: "30rem" }}
+                          key={element}
+                      >
                           <div className="primeraParte-skeleton-work">
                               <Skeleton
                                   variant="rectangular"
-                                  width={300}
-                                  height={50}
+                                  sx={{ width: "20%", height: "2rem" }}
                               />
                           </div>
                           <div className="segundaParte-skeleton-work">
                               <div style={{ width: "50%" }}>
                                   <Skeleton
                                       variant="rectangular"
-                                      width={500}
-                                      height={290}
+                                      sx={{ width: "100%", height: "10rem" }}
                                   />
                               </div>
                               <div className="container-description-skeleton">
                                   <Skeleton
                                       variant="rounded"
-                                      width={500}
-                                      height={150}
+                                      sx={{ width: "70%", height: "15rem" }}
                                   />
-                                  <div>
-                                      <Skeleton
-                                          variant="rounded"
-                                          width={400}
-                                          height={30}
-                                      />
-                                  </div>
+                                  <Skeleton
+                                      variant="rounded"
+                                      sx={{ width: "50%", height: "3rem" }}
+                                  />
                               </div>
                           </div>
                       </Box>

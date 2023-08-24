@@ -26,7 +26,7 @@ const ContactoFooter = ({
                     sx={{
                         backgroundColor: "white",
                         borderRadius: "4px",
-                        width: { xs: "5rem", md: "15rem", sm: "10rem" },
+                        width: { xs: "10rem", md: "15rem", sm: "10rem" },
                     }}
                     error={errors.name ? true : false}
                     helperText={errors.name}
@@ -38,7 +38,7 @@ const ContactoFooter = ({
                     sx={{
                         backgroundColor: "white",
                         borderRadius: "4px",
-                        width: { xs: "5rem", md: "15rem", sm: "10rem" },
+                        width: { xs: "10rem", md: "15rem", sm: "10rem" },
                     }}
                     error={errors.email ? true : false}
                     helperText={errors.email}

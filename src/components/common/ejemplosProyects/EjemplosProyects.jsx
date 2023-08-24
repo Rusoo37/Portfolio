@@ -21,13 +21,11 @@ const EjemplosProyects = ({ items }) => {
                       <div className="container-sample-proyect" key={element}>
                           <Skeleton
                               variant="rectangular"
-                              width={300}
-                              height={60}
+                              sx={{ width: "100%", height: "20%" }}
                           ></Skeleton>
                           <Skeleton
                               variant="rectangular"
-                              width={300}
-                              height={300}
+                              sx={{ width: "100%", height: "70%" }}
                           ></Skeleton>
                       </div>
                   ))}

@@ -18,7 +18,9 @@ const AboutMe = () => {
 
             <div className="container-info-aboutMe">
                 <div className="text-aboutMe">
-                    <Typography>
+                    <Typography
+                        sx={{ fontSize: { xs: "0.9rem", sm: "1.2rem" } }}
+                    >
                         I'm a System Engineering student, who is 20 years old,
                         at University of Tandil, Buenos Aires, Argentina.
                         Although, I'm a productive Front End Developer working
