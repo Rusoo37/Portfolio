@@ -58,7 +58,7 @@ const Footer = ({ isDark, changeMode }) => {
                     }}
                     color="secondary.main"
                 >
-                    @ Developed by Angladette
+                    © Developed by Angladette
                 </Typography>
             </div>
             <button onClick={changeMode} style={{ cursor: "pointer" }}>
