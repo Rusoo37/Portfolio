@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import "./CardProyect.css";
 
 const CardProyect = ({ item }) => {
@@ -37,7 +37,12 @@ const CardProyect = ({ item }) => {
                         </Typography>
                     </div>
                     <div>
-                        <a href={item.url} target="_blank">
+                        <Button variant="outlined">
+                            <a href={item.url} target="_blank">
+                                Live Code
+                            </a>
+                        </Button>
+                        {/* <a href={item.url} target="_blank">
                             <Typography
                                 variant="h5"
                                 color="primary.main"
@@ -45,7 +50,7 @@ const CardProyect = ({ item }) => {
                             >
                                 {item.url}
                             </Typography>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
