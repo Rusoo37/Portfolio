@@ -21,7 +21,7 @@ const ContactoFooter = ({
                 </Typography>
                 <TextField
                     name="name"
-                    placeholder="Nombre.."
+                    placeholder="Name.."
                     onChange={handleChange}
                     sx={{
                         backgroundColor: "white",
@@ -45,7 +45,7 @@ const ContactoFooter = ({
                 />
                 <TextareaAutosize
                     name="message"
-                    placeholder="Mensaje.."
+                    placeholder="message.."
                     variant="outlined"
                     onChange={handleChange}
                     style={{
