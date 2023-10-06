@@ -47,6 +47,7 @@ const Footer = ({ isDark, changeMode }) => {
                             display: "flex",
                             height: "100%",
                             alignItems: "center",
+                            transition: "all 0.5s ease",
                         }}
                     >
                         <ArrowUpwardIcon />

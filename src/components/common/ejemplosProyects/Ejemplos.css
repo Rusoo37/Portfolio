@@ -8,10 +8,12 @@
     gap: 1rem;
     padding: 10px 5px;
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 .container-sample-proyect:hover {
-    box-shadow: 0 0 10px 2px rgb(213, 201, 201);
+    box-shadow: 0 0 5px 2px rgb(213, 201, 201);
     cursor: pointer;
+    transform: scale(1.1);
     z-index: 1;
 }
 .img-sample-proyect {
