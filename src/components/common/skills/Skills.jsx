@@ -12,7 +12,7 @@ const Skills = () => {
                 gap: "3rem",
             }}
         >
-            <h1>Skills</h1>
+            <h1 style={{ textDecoration: "none" }}>Skills</h1>
             <div className="container-skills">
                 <div className="skill">
                     <img
