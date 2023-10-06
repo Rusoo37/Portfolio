@@ -6,9 +6,9 @@
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
 }
-.container-btn-whatsapp {
-    width: 16rem;
-    height: 8rem;
+.container-btn-discord {
+    width: 13rem;
+    height: 7rem;
     position: fixed;
     right: 0rem;
     bottom: 0;
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
 }
-.btn-whatsapp {
+.btn-discord {
     width: 100%;
     height: 100%;
 }

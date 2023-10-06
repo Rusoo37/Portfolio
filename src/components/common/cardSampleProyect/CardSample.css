@@ -1,11 +1,15 @@
 .container-sample-proyect {
     height: 100%;
-    width: 33%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+}
+.nombre-sample-poryect {
+    color: black;
 }
 .img-sample-proyect {
     width: 100%;

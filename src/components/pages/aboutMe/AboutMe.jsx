@@ -77,12 +77,16 @@ const AboutMe = () => {
                     />
                 </div>
             </div>
-            <div className="container-btn-whatsapp">
-                <Alert color="success">Inquiries by WhatsApp!</Alert>
-                <a href="https://wa.link/neljfb" className="btn-whatsapp">
+            <div className="container-btn-discord">
+                <Alert color="success">Inquiries by Discord!</Alert>
+                <a
+                    href="https://discord.com/channels/@me"
+                    className="btn-discord"
+                    target="_blank"
+                >
                     <img
-                        src="https://res.cloudinary.com/dqonbozpq/image/upload/v1691860314/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png_arus4e.png"
-                        alt="WhatsApp"
+                        src="https://res.cloudinary.com/dqonbozpq/image/upload/v1696605205/discord-logo-0_yyskdx.png"
+                        alt="Discord"
                         style={{ height: "100%", width: "100%" }}
                     />
                 </a>

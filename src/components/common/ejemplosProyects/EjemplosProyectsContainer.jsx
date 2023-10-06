@@ -15,7 +15,7 @@ const EjemplosProyectsContainer = () => {
         });
     }, []);
     return (
-        <div style={{ width: "90%", height: "15rem" }}>
+        <div style={{ width: "90%" }}>
             <EjemplosProyects items={items} />
         </div>
     );

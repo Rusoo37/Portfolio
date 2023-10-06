@@ -13,18 +13,9 @@ const Redes = () => {
             className="container-redes"
             sx={{ flexDirection: { xs: "column", md: "row" } }}
         >
-            <a
-                href="https://www.facebook.com/nicolas.angladette.7"
-                style={{ color: "#385898" }}
-            >
-                <FacebookIcon />
-            </a>
             <Tooltip title="Necochea" sx={{ color: "secondary.main" }}>
                 <LocationOnIcon />
             </Tooltip>
-            <a href="https://wa.link/neljfb" style={{ color: "#25D366" }}>
-                <WhatsAppIcon />
-            </a>
             <Tooltip title="2262486975" sx={{ color: "secondary.main" }}>
                 <PhoneIcon />
             </Tooltip>

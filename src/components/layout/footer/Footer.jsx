@@ -5,6 +5,7 @@ import ContactoFooterContainer from "../../common/contactoFooter/ContactoFooterC
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import Skills from "../../common/skills/Skills";
 
 const Footer = ({ isDark, changeMode }) => {
     return (
@@ -17,11 +18,16 @@ const Footer = ({ isDark, changeMode }) => {
                 <div className="contacto-footer">
                     <ContactoFooterContainer />
                 </div>
-                <div className="redes-footer">
-                    <Typography variant="h4" color="secondary.main">
-                        Contact
-                    </Typography>
-                    <Redes />
+                <div className="second-part-footer">
+                    <div>
+                        <Skills />
+                    </div>
+                    <div className="redes-footer">
+                        <Typography variant="h4" color="secondary.main">
+                            Contact me
+                        </Typography>
+                        <Redes />
+                    </div>
                 </div>
             </div>
             <div className="desarrollado-footer">
