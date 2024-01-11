@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Secciones.css";
 
-const Secciones = () => {
+const Secciones = ({ scrollToSection }) => {
     return (
         <>
             <Link to="./work">
@@ -19,11 +19,14 @@ const Secciones = () => {
                     About me
                 </Typography>
             </Link>
-            <a href="#contact">
+            <button
+                onClick={() => scrollToSection("contact")}
+                style={{ background: "none", border: "none" }}
+            >
                 <Typography className="ty" color="secondary.main">
                     Contact
                 </Typography>
-            </a>
+            </button>
         </>
     );
 };

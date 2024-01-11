@@ -31,29 +31,6 @@ const Footer = ({ isDark, changeMode }) => {
                 </div>
             </div>
             <div className="desarrollado-footer">
-                <a
-                    href="#navbar"
-                    style={{
-                        width: "5%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        height: "100%",
-                    }}
-                >
-                    <Box
-                        sx={{
-                            color: "secondary.main",
-                            display: "flex",
-                            height: "100%",
-                            alignItems: "center",
-                            transition: "all 0.5s ease",
-                        }}
-                    >
-                        <ArrowUpwardIcon />
-                        <p>Go up</p>
-                    </Box>
-                </a>
                 <Typography
                     variant="h6"
                     sx={{

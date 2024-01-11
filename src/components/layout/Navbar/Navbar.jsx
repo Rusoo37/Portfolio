@@ -3,7 +3,7 @@ import Secciones from "../../common/secciones/Secciones";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
     return (
         <Box
             className="container-navbar"
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </h2>
             </div>
             <div className="secciones-navbar">
-                <Secciones />
+                <Secciones scrollToSection={scrollToSection} />
             </div>
         </Box>
     );

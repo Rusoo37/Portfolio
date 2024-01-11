@@ -17,6 +17,7 @@
 .fotoMia-aboutMe {
     width: 50%;
     box-shadow: 2px 2px 10px 2px rgb(197, 197, 197);
+    animation: aparecer 0.5s ease forwards;
 }
 .extra-aboutMe {
     display: flex;

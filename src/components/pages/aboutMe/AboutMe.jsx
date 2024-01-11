@@ -1,6 +1,7 @@
 import { Alert, Box, Typography } from "@mui/material";
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
+import GoUp from "../../common/goUp/GoUp";
 
 const AboutMe = () => {
     return (
@@ -91,6 +92,7 @@ const AboutMe = () => {
                     />
                 </a>
             </div>
+            <GoUp />
         </Box>
     );
 };

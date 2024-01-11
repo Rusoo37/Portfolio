@@ -8,6 +8,7 @@
     min-height: 20rem;
     padding: 10px;
     box-shadow: 0 0 8px 2px rgb(173, 168, 161);
+    animation: aparecer 0.5s ease forwards;
 }
 .primeraParte-cardProyect {
     display: flex;

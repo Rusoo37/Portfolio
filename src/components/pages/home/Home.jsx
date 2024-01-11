@@ -2,7 +2,15 @@ import { Alert, Box, Typography } from "@mui/material";
 import "./Home.css";
 import EjemplosProyectsContainer from "../../common/ejemplosProyects/EjemplosProyectsContainer";
 import { Link } from "react-router-dom";
+import GoUp from "../../common/goUp/GoUp";
 const Home = () => {
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <Box sx={{ backgroundColor: "secondary.dark" }}>
             <div className="container-home">
@@ -110,6 +118,7 @@ const Home = () => {
                         />
                     </a>
                 </div>
+                <GoUp />
             </div>
         </Box>
     );

@@ -2,6 +2,7 @@ import { Alert, Box } from "@mui/material";
 import CardProyect from "../../common/cardProyect/CardProyect";
 import "./Work.css";
 import Skeleton from "@mui/material/Skeleton";
+import GoUp from "../../common/goUp/GoUp";
 
 const Work = ({ items }) => {
     let arr = [1, 2];
@@ -59,6 +60,7 @@ const Work = ({ items }) => {
                     />
                 </a>
             </div>
+            <GoUp />
         </Box>
     );
 };

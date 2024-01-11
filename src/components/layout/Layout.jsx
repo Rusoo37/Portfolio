@@ -10,10 +10,17 @@ const Layout = () => {
     const changeMode = () => {
         setIsDark(!isDark);
     };
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <ThemeProvider theme={isDark ? customThemeDark : customTheme}>
             <>
-                <Navbar />
+                <Navbar scrollToSection={scrollToSection} />
                 <Outlet />
                 <Footer isDark={isDark} changeMode={changeMode} />
             </>
