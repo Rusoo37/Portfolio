@@ -42,3 +42,15 @@
     height: 15%;
     width: 100%;
 }
+@media (max-width: 900px) {
+    .container-footer {
+        flex-direction: column;
+    }
+    .second-part-footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .redes-footer {
+        width: 50%;
+    }
+}

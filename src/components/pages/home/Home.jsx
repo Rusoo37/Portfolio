@@ -37,15 +37,7 @@ const Home = () => {
                         className="separator-intro-home"
                         sx={{ backgroundColor: "primary.dark" }}
                     ></Box>
-                    <div
-                        style={{
-                            width: "50%",
-                            height: "100%",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
+                    <div className="container-foto-mia">
                         <img
                             src="https://res.cloudinary.com/dqonbozpq/image/upload/v1691966346/Perfil_kwdhgb.jpg"
                             alt="Yo"

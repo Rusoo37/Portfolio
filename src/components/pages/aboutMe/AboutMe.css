@@ -30,3 +30,36 @@
     width: 2px;
     background-color: #8e8c88;
 }
+.container-fotoMia-aboutMe {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 700px) {
+    .container-info-aboutMe {
+        height: 45rem;
+    }
+    .fotoMia-aboutMe {
+        width: 60%;
+    }
+    .container-info-aboutMe {
+        flex-direction: column-reverse;
+    }
+    .separator-intro {
+        height: 2px;
+        width: 40%;
+        background-color: #8e8c88;
+    }
+    .text-aboutMe {
+        flex-direction: row;
+        width: 100%;
+    }
+    .text-aboutMe p {
+        width: 80%;
+    }
+    .extra-aboutMe {
+        width: 100%;
+    }
+}

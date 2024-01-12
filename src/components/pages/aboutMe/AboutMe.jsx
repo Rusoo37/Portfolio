@@ -29,48 +29,48 @@ const AboutMe = () => {
                         I'm interested on working in short proyects in order to
                         continue my university studies.
                     </Typography>
-                    <h3>Extras:</h3>
-                    <div className="extra-aboutMe">
-                        <li>
-                            <a
-                                href="./../../../assets/curriculumNico.pdf"
-                                download
-                                style={{ color: "black", fontSize: "1.1rem" }}
-                            >
-                                <strong>Curriculum Vitae</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <Link
-                                to="/work"
-                                style={{ color: "black", fontSize: "1.1rem" }}
-                            >
-                                <strong>Proyects</strong>
-                            </Link>
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/Rusoo37"
-                                style={{ color: "black" }}
-                            >
-                                <strong>GitHub</strong>
-                            </a>
-                        </li>
+                    <div>
+                        <h3>Extras:</h3>
+                        <div className="extra-aboutMe">
+                            <li>
+                                <a
+                                    href="./../../../assets/curriculumNico.pdf"
+                                    download
+                                    style={{
+                                        color: "black",
+                                        fontSize: "1.1rem",
+                                    }}
+                                >
+                                    <strong>Curriculum Vitae</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/work"
+                                    style={{
+                                        color: "black",
+                                        fontSize: "1.1rem",
+                                    }}
+                                >
+                                    <strong>Proyects</strong>
+                                </Link>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/Rusoo37"
+                                    style={{ color: "black" }}
+                                >
+                                    <strong>GitHub</strong>
+                                </a>
+                            </li>
+                        </div>
                     </div>
                 </div>
                 <Box
                     className="separator-intro"
                     sx={{ backgroundColor: "primary.dark" }}
                 ></Box>
-                <div
-                    style={{
-                        width: "50%",
-                        height: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}
-                >
+                <div className="container-fotoMia-aboutMe">
                     <img
                         src="https://res.cloudinary.com/dqonbozpq/image/upload/v1691966346/Perfil_kwdhgb.jpg"
                         alt="Yo"

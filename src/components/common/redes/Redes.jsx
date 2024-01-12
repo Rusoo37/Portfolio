@@ -9,10 +9,7 @@ import { Box, Tooltip } from "@mui/material";
 
 const Redes = () => {
     return (
-        <Box
-            className="container-redes"
-            sx={{ flexDirection: { xs: "column", md: "row" } }}
-        >
+        <Box className="container-redes" sx={{ flexDirection: { md: "row" } }}>
             <Tooltip title="Necochea" sx={{ color: "secondary.main" }}>
                 <LocationOnIcon />
             </Tooltip>

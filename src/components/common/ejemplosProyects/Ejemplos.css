@@ -21,3 +21,8 @@
     width: 100%;
     height: 80%;
 }
+@media (max-width: 600px) {
+    .container-sample-proyect {
+        width: 50%;
+    }
+}

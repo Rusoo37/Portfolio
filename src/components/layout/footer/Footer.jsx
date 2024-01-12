@@ -23,7 +23,11 @@ const Footer = ({ isDark, changeMode }) => {
                         <Skills />
                     </div>
                     <div className="redes-footer">
-                        <Typography variant="h4" color="secondary.main">
+                        <Typography
+                            variant="h4"
+                            color="secondary.main"
+                            sx={{ textAlign: "center" }}
+                        >
                             Contact me
                         </Typography>
                         <Redes />
