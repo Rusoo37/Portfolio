@@ -4,8 +4,21 @@
     transition: 0.5s;
     padding: 10px;
     border-radius: 5px;
+    background: none;
+    border: none;
 }
 .ty:hover {
     box-shadow: 0 0 10px 2px rgb(182, 177, 177);
     color: white;
+}
+.cambiar-idioma {
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.cambiar-idioma:hover {
+    box-shadow: 0 0 10px 2px rgb(182, 177, 177);
+    color: black;
 }

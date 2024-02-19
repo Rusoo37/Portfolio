@@ -1,13 +1,16 @@
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Secciones.css";
+import i18n from "../../../../i18n";
+import { useTranslation } from "react-i18next";
 
-const Secciones = ({ scrollToSection }) => {
+const Secciones = ({ scrollToSection, toggleLanguage }) => {
+    const { t } = useTranslation();
     return (
         <>
             <Link to="./work">
                 <Typography className="ty" color="secondary.main">
-                    Work
+                    {t("work")}
                 </Typography>
             </Link>
             <Link to="./about-me">
@@ -16,7 +19,7 @@ const Secciones = ({ scrollToSection }) => {
                     sx={{ fontFamily: "Rubik" }}
                     color="secondary.main"
                 >
-                    About me
+                    {t("aboutMe")}
                 </Typography>
             </Link>
             <button
@@ -24,8 +27,11 @@ const Secciones = ({ scrollToSection }) => {
                 style={{ background: "none", border: "none" }}
             >
                 <Typography className="ty" color="secondary.main">
-                    Contact
+                    {t("contact")}
                 </Typography>
+            </button>
+            <button onClick={toggleLanguage} className="cambiar-idioma">
+                {i18n.language === "en" ? "Español" : "English"}
             </button>
         </>
     );

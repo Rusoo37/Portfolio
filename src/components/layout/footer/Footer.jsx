@@ -6,6 +6,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import Skills from "../../common/skills/Skills";
+import { t } from "i18next";
 
 const Footer = ({ isDark, changeMode }) => {
     return (
@@ -28,7 +29,7 @@ const Footer = ({ isDark, changeMode }) => {
                             color="secondary.main"
                             sx={{ textAlign: "center" }}
                         >
-                            Contact me
+                            {t("contact")}
                         </Typography>
                         <Redes />
                     </div>
@@ -46,7 +47,7 @@ const Footer = ({ isDark, changeMode }) => {
                     }}
                     color="secondary.main"
                 >
-                    © Developed by Angladette
+                    © {t("developed")}
                 </Typography>
             </div>
             <button onClick={changeMode} style={{ cursor: "pointer" }}>

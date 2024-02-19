@@ -3,6 +3,7 @@ import CardProyect from "../../common/cardProyect/CardProyect";
 import "./Work.css";
 import Skeleton from "@mui/material/Skeleton";
 import GoUp from "../../common/goUp/GoUp";
+import { t } from "i18next";
 
 const Work = ({ items }) => {
     let arr = [1, 2];
@@ -11,7 +12,9 @@ const Work = ({ items }) => {
             className="container-works"
             sx={{ backgroundColor: "secondary.dark" }}
         >
-            <h1 style={{ marginTop: "2rem", fontSize: "3rem" }}>Proyects</h1>
+            <h1 style={{ marginTop: "2rem", fontSize: "3rem" }}>
+                {t("proyects")}
+            </h1>
             {items.length > 0
                 ? items.map((item) => <CardProyect key={item.id} item={item} />)
                 : arr.map((element) => (

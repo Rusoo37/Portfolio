@@ -1,5 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./Skills.css";
+import { t } from "i18next";
 
 const Skills = () => {
     return (
@@ -12,7 +13,7 @@ const Skills = () => {
                 gap: "3rem",
             }}
         >
-            <h1 style={{ textDecoration: "none" }}>Skills</h1>
+            <h1 style={{ textDecoration: "none" }}>{t("skills")}</h1>
             <div className="container-skills">
                 <div className="skill">
                     <img

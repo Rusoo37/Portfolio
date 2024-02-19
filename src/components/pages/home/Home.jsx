@@ -3,6 +3,7 @@ import "./Home.css";
 import EjemplosProyectsContainer from "../../common/ejemplosProyects/EjemplosProyectsContainer";
 import { Link } from "react-router-dom";
 import GoUp from "../../common/goUp/GoUp";
+import { t } from "i18next";
 const Home = () => {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -17,7 +18,7 @@ const Home = () => {
                 <div className="introduccion-home">
                     <div style={{ width: "50%" }}>
                         <div className="container-nombre-home">
-                            <h2>Hi, I'm</h2>
+                            <h2>{t("hi")}</h2>
                             <Typography
                                 sx={{
                                     fontSize: {
@@ -30,7 +31,7 @@ const Home = () => {
                             >
                                 Nicolás Angladette,
                             </Typography>
-                            <h3> a productive Front End Developer.</h3>
+                            <h3>{t("productive")}.</h3>
                         </div>
                     </div>
                     <Box
@@ -47,7 +48,7 @@ const Home = () => {
                 </div>
                 <div className="proyects-home">
                     <div className="name-home">
-                        <Typography variant="h4">Proyects</Typography>
+                        <Typography variant="h4">{t("proyects")}</Typography>
                         <Box
                             className="separator-home"
                             sx={{ backgroundColor: "primary.dark" }}
@@ -59,7 +60,7 @@ const Home = () => {
                 </div>
                 <div className="aboutMe-home" id="about-me">
                     <div className="name-home">
-                        <Typography variant="h4">About me</Typography>
+                        <Typography variant="h4">{t("aboutMe")}</Typography>
                         <Box
                             className="separator-home"
                             sx={{ backgroundColor: "primary.dark" }}
@@ -67,13 +68,7 @@ const Home = () => {
                     </div>
                     <div className="container-info-aboutMe-home">
                         <div className="text-aboutMe-home">
-                            <Typography>
-                                I'm a student of System Engineering at
-                                University of Tandil, Buenos Aires, Argentina.
-                                Although, I'm a productive Front End Developer
-                                working as a freelancer. My skills are
-                                JavaScript and ReactJs.
-                            </Typography>
+                            <Typography>{t("description")}</Typography>
                         </div>
                         <div className="extra-aboutMe-home">
                             <a
@@ -84,7 +79,7 @@ const Home = () => {
                                 <strong>Curriculum Vitae</strong>
                             </a>
                             <Link to="/work" style={{ color: "black" }}>
-                                <h3>Proyects</h3>
+                                <h3>{t("proyects")}</h3>
                             </Link>
                             <a
                                 href="https://github.com/Rusoo37"
@@ -97,7 +92,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="container-btn-discord">
-                    <Alert color="success">Inquiries by Discord!</Alert>
+                    <Alert color="success">{t("inquiries")}</Alert>
                     <a
                         href="https://discord.com/channels/@me"
                         className="btn-discord"

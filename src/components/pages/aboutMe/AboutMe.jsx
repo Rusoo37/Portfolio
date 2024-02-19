@@ -2,8 +2,9 @@ import { Alert, Box, Typography } from "@mui/material";
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
 import GoUp from "../../common/goUp/GoUp";
+import { t } from "i18next";
 
-const AboutMe = () => {
+const AboutMe = ({ idioma }) => {
     return (
         <Box
             style={{
@@ -15,19 +16,14 @@ const AboutMe = () => {
             }}
             sx={{ backgroundColor: "secondary.dark" }}
         >
-            <h1 style={{ marginTop: "5rem" }}>About Me</h1>
+            <h1 style={{ marginTop: "5rem" }}>{t("aboutMe")}</h1>
 
             <div className="container-info-aboutMe">
                 <div className="text-aboutMe">
                     <Typography
                         sx={{ fontSize: { xs: "0.9rem", sm: "1.2rem" } }}
                     >
-                        I'm a System Engineering student, who is 20 years old,
-                        at University of Tandil, Buenos Aires, Argentina.
-                        Although, I'm a productive Front End Developer working
-                        as a freelancer. My skills are JavaScript and ReactJs.
-                        I'm interested on working in short proyects in order to
-                        continue my university studies.
+                        {t("descriptionAbout")}
                     </Typography>
                     <div>
                         <h3>Extras:</h3>
@@ -52,7 +48,7 @@ const AboutMe = () => {
                                         fontSize: "1.1rem",
                                     }}
                                 >
-                                    <strong>Proyects</strong>
+                                    <strong>{t("proyects")}</strong>
                                 </Link>
                             </li>
                             <li>
@@ -79,7 +75,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="container-btn-discord">
-                <Alert color="success">Inquiries by Discord!</Alert>
+                <Alert color="success">{t("inquiries")}</Alert>
                 <a
                     href="https://discord.com/channels/@me"
                     className="btn-discord"

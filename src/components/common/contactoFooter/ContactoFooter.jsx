@@ -1,5 +1,6 @@
 import { Button, TextField, TextareaAutosize, Typography } from "@mui/material";
 import "./ContactoFooter.css";
+import { t } from "i18next";
 
 const ContactoFooter = ({
     handleSubmit,
@@ -17,11 +18,11 @@ const ContactoFooter = ({
                     color="secondary.main"
                     sx={{ fontSize: "1.1rem" }}
                 >
-                    Ask me by Mail!
+                    {t("askMe")}
                 </Typography>
                 <TextField
                     name="name"
-                    placeholder="Name.."
+                    placeholder={t("name")}
                     onChange={handleChange}
                     sx={{
                         backgroundColor: "white",
@@ -33,7 +34,7 @@ const ContactoFooter = ({
                 />
                 <TextField
                     name="email"
-                    placeholder="Email.."
+                    placeholder={t("email")}
                     onChange={handleChange}
                     sx={{
                         backgroundColor: "white",
@@ -45,7 +46,7 @@ const ContactoFooter = ({
                 />
                 <TextareaAutosize
                     name="message"
-                    placeholder="message.."
+                    placeholder={t("message")}
                     variant="outlined"
                     onChange={handleChange}
                     style={{
@@ -63,7 +64,7 @@ const ContactoFooter = ({
                 variant="outlined"
                 style={{ color: "white", borderColor: "white" }}
             >
-                Send Email
+                {t("send")}
             </Button>
         </form>
     );

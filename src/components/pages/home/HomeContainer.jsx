@@ -1,6 +1,6 @@
 import Home from "./Home";
 
-const HomeContainer = () => {
+const HomeContainer = ({ idioma }) => {
     return <Home />;
 };
 

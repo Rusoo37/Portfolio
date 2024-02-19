@@ -1,7 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
 import "./CardProyect.css";
+import { t } from "i18next";
+import { useContext } from "react";
+import { IdiomaContext } from "../../../context/IdiomaContext";
 
 const CardProyect = ({ item }) => {
+    const { idioma } = useContext(IdiomaContext);
     return (
         <Box
             className="info-cardProyect"
@@ -33,24 +37,15 @@ const CardProyect = ({ item }) => {
                             sx={{ fontSize: { xs: "0.7rem", md: "1rem" } }}
                         >
                             {" "}
-                            {item.descripcion}
+                            {idioma ? item.description : item.descripcion}
                         </Typography>
                     </div>
                     <div>
                         <Button variant="outlined">
                             <a href={item.url} target="_blank">
-                                Live Code
+                                {t("liveCode")}
                             </a>
                         </Button>
-                        {/* <a href={item.url} target="_blank">
-                            <Typography
-                                variant="h5"
-                                color="primary.main"
-                                sx={{ fontSize: { xs: "0.9rem" } }}
-                            >
-                                {item.url}
-                            </Typography>
-                        </a> */}
                     </div>
                 </div>
             </div>

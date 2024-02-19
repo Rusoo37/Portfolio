@@ -1,0 +1,8 @@
+[build]
+  functionsDirectory = "portfolio/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
